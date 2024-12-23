@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1f1f1f, #434343);
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    background: #2c2c2c;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #e0e0e0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #444;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-container:focus-within {
+    border-color: #6e6e6e;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+input[type="password"],
+input[type="text"] {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #fff;
+    background: #2c2c2c;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.toggle-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    filter: invert(100%);
+}
+
+.toggle-icon:hover {
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #434343, #000000);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #555555, #1a1a1a);
+}
